@@ -1,5 +1,7 @@
 "use.strict";
 
+import { inicializarCarrinho } from "./src/menucarrinho";
+
 const catalogo = [
   {
     id: 1,
@@ -100,8 +102,8 @@ const catalogo = [
 ];
 
 for (const produtoCatalogo of catalogo) {
-  const cartaoProduto = `<div id="card-produto-1">
-          <img
+  const cartaoProduto = `<div class="border-solid border-2 border-gray-600 w-72 m-2" id="card-produto-${produtoCatalogo.id}">
+          <img 
             src="./assets/img/${produtoCatalogo.imagem}"
             alt="Produto 1 do e-commerce Zara"
           />
@@ -113,3 +115,5 @@ for (const produtoCatalogo of catalogo) {
 
   document.getElementById("container-produto").innerHTML += cartaoProduto;
 }
+
+inicializarCarrinho();
