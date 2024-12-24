@@ -13,10 +13,10 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="bg-stone-200 flex flex-col">
     <section
       id="carrinho"
-      class="fixed top-0 right-[-360px] bg-gray-300 h-screen w-[360px] text-gray-800"
+      class="fixed top-0 right-[-360px] bg-slate-950 h-screen w-[360px] text-slate-200 z-50"
     >
       <div id="cabecalho-carrinho" class="flex justify-between m-4">
         <p>Meu carrinho</p>
@@ -30,19 +30,24 @@
         <p>Jaqueta com Efeito Camurça</p>
       </section>
       <p id="preco-total">$200</p>
-      <button class="bg-gray-500 text-white p-2">Finalizar compra</button>
+      <button class="bg-slate-200 text-slate-950 p-1">Finalizar compra</button>
     </section>
-    <header class="flex bg-gray-300 p-2 justify-between">
-      <img class="h-16" src="./assets/logo/logo_zara.svg" alt="Logo da Zara" />
-      <div class="text-gray-800 flex items-center gap-2 mx-2">
-        <buttom id="abrir-carrinho"
+    <header
+      class="flex text-xl bg-slate-950 shadow-xl shadow-slate-400 p-8 py-2 justify-between sticky top-0"
+    >
+      <img class="h-14" src="./assets/logo/zara_logo2.png" alt="Logo da Zara" />
+      <div class="text-slate-200 flex items-center gap-2 mx-2">
+        <buttom id="abrir-carrinho" class="mx-2"
           ><i class="fa-solid fa-cart-shopping"></i
         ></buttom>
-        <buttom><i class="fa-solid fa-user"></i></buttom>
+        <buttom class="mr-2"><i class="fa-solid fa-user"></i></buttom>
       </div>
     </header>
     <main>
-      <section id="container-produto" class="flex flex-wrap"></section>
+      <section
+        id="container-produto"
+        class="flex flex-wrap p-10 justify-center gap-10"
+      ></section>
     </main>
     <script type="module" src="main.js"></script>
   </body>
