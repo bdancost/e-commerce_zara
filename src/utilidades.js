@@ -5,7 +5,7 @@ export const catalogo = [
     nome: "Camisa Larga com Bolsos",
     preco: 70,
     imagem: "product-1.jpg",
-    feminino: false,
+    feminino: true,
   },
   {
     id: "2",
@@ -21,7 +21,7 @@ export const catalogo = [
     nome: "Jaqueta com Efeito Camurça",
     preco: 60,
     imagem: "product-3.jpg",
-    feminino: false,
+    feminino: true,
   },
   {
     id: "4",
@@ -29,7 +29,7 @@ export const catalogo = [
     nome: "Sobretudo em Mescla de Lã",
     preco: 160,
     imagem: "product-4.jpg",
-    feminino: false,
+    feminino: true,
   },
   {
     id: "5",
@@ -37,7 +37,7 @@ export const catalogo = [
     nome: "Camisa Larga Acolchoada de Veludo Cotelê",
     preco: 110,
     imagem: "product-5.jpg",
-    feminino: false,
+    feminino: true,
   },
   {
     id: "6",
