@@ -1,6 +1,7 @@
 "use.strict";
 
 import { renderizarCatalogo } from "./src/cartaoProduto";
+import { inicilizarFiltros } from "./src/filtrosCatalogo";
 import {
   atualizarPrecoCarrinho,
   inicializarCarrinho,
@@ -11,3 +12,4 @@ renderizarCatalogo();
 inicializarCarrinho();
 renderizarProdutosCarrinho();
 atualizarPrecoCarrinho();
+inicilizarFiltros();

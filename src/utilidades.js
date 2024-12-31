@@ -5,7 +5,7 @@ export const catalogo = [
     nome: "Camisa Larga com Bolsos",
     preco: 70,
     imagem: "product-1.jpg",
-    feminino: true,
+    feminino: false,
   },
   {
     id: "2",
@@ -21,7 +21,7 @@ export const catalogo = [
     nome: "Jaqueta com Efeito Camurça",
     preco: 60,
     imagem: "product-3.jpg",
-    feminino: true,
+    feminino: false,
   },
   {
     id: "4",
@@ -29,7 +29,7 @@ export const catalogo = [
     nome: "Sobretudo em Mescla de Lã",
     preco: 160,
     imagem: "product-4.jpg",
-    feminino: true,
+    feminino: false,
   },
   {
     id: "5",
@@ -37,7 +37,7 @@ export const catalogo = [
     nome: "Camisa Larga Acolchoada de Veludo Cotelê",
     preco: 110,
     imagem: "product-5.jpg",
-    feminino: true,
+    feminino: false,
   },
   {
     id: "6",
@@ -69,7 +69,7 @@ export const catalogo = [
     nome: "Blazer Azul De Algodão",
     preco: 199,
     imagem: "product-9.webp",
-    masculino: true,
+    masculino: false,
   },
   {
     id: "10",
@@ -77,7 +77,7 @@ export const catalogo = [
     nome: "Jaqueta Beige",
     preco: 125,
     imagem: "product-10.webp",
-    masculino: true,
+    masculino: false,
   },
   {
     id: "11",
