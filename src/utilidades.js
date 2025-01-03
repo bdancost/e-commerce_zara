@@ -104,3 +104,56 @@ export function salvarLocalStorage(chave, informacao) {
 export function lerLocalStorage(chave) {
   return JSON.parse(localStorage.getItem(chave));
 }
+
+export function desenharProdutoCarrinhoSimples(
+  idProduto,
+  idContainerHtml,
+  quantidadeProduto
+) {
+  const produto = catalogo.find((p) => p.id == idProduto);
+  const containerProdutosCarrinho =
+    document.getElementById("produtos-carrinho");
+
+  const elementoArticle = document.createElement("article");
+  const articleClasses = [
+    "flex",
+    "bg-slate-100",
+    "rounded-lg",
+    "p-1",
+    "relative",
+  ];
+
+  for (const articleClass of articleClasses) {
+    elementoArticle.classList.add(articleClass);
+  }
+
+  const cartaoProdutoCarrinho = `          
+          <img
+            src="./assets/img/${produto.imagem}"
+            alt="Carrinho: ${produto.nome}"
+            class="h-24 rounded-lg"
+          />
+          <div class="p-2 flex flex-col justify-between">
+            <p class="text-slate-900 text-sm">${produto.nome}</p>
+            <p class="text-slate-400 text-xs">Tamanho: M</p>
+            <p class="text-green-700 text-lg">$${produto.preco}</p>
+          </div>
+          <div class="flex text-slate-950 items-end absolute bottom-0 right-2 text-lg">
+          <p id="quantidade-${produto.id}" class="ml-2">${quantidadeProduto}</p>
+          </div>`;
+
+  elementoArticle.innerHTML = cartaoProdutoCarrinho;
+  containerProdutosCarrinho.appendChild(elementoArticle);
+
+  document
+    .getElementById(`decrementar-produto-${produto.id}`)
+    .addEventListener("click", () => decrementarQuantidadeProduto(produto.id));
+
+  document
+    .getElementById(`incrementar-produto-${produto.id}`)
+    .addEventListener("click", () => incrementarQuantidadeProduto(produto.id));
+
+  document
+    .getElementById(`remover-item-${produto.id}`)
+    .addEventListener("click", () => removerDoCarrinho(produto.id));
+}
