@@ -105,22 +105,27 @@ export function lerLocalStorage(chave) {
   return JSON.parse(localStorage.getItem(chave));
 }
 
+export function apagarDoLocalStorage(chave) {
+  localStorage.removeItem(chave);
+}
+
 export function desenharProdutoCarrinhoSimples(
   idProduto,
   idContainerHtml,
   quantidadeProduto
 ) {
   const produto = catalogo.find((p) => p.id == idProduto);
-  const containerProdutosCarrinho =
-    document.getElementById("produtos-carrinho");
+  const containerProdutosCarrinho = document.getElementById("idContainerHtml");
 
   const elementoArticle = document.createElement("article");
   const articleClasses = [
     "flex",
-    "bg-slate-100",
+    "bg-stone-200",
     "rounded-lg",
     "p-1",
     "relative",
+    "mb-2",
+    "w-96",
   ];
 
   for (const articleClass of articleClasses) {
@@ -144,16 +149,4 @@ export function desenharProdutoCarrinhoSimples(
 
   elementoArticle.innerHTML = cartaoProdutoCarrinho;
   containerProdutosCarrinho.appendChild(elementoArticle);
-
-  document
-    .getElementById(`decrementar-produto-${produto.id}`)
-    .addEventListener("click", () => decrementarQuantidadeProduto(produto.id));
-
-  document
-    .getElementById(`incrementar-produto-${produto.id}`)
-    .addEventListener("click", () => incrementarQuantidadeProduto(produto.id));
-
-  document
-    .getElementById(`remover-item-${produto.id}`)
-    .addEventListener("click", () => removerDoCarrinho(produto.id));
 }
