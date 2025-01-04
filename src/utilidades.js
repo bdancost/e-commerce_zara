@@ -114,8 +114,8 @@ export function desenharProdutoCarrinhoSimples(
   idContainerHtml,
   quantidadeProduto
 ) {
-  const produto = catalogo.find((p) => p.id == idProduto);
-  const containerProdutosCarrinho = document.getElementById("idContainerHtml");
+  const produto = catalogo.find((p) => p.id === idProduto);
+  const containerProdutosCarrinho = document.getElementById(idContainerHtml);
 
   const elementoArticle = document.createElement("article");
   const articleClasses = [
