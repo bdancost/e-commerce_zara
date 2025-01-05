@@ -3,7 +3,7 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/e-commerce-zara/",
+  base: "/e-commerce_zara/",
   plugins: [],
   resolve: {
     /*something*/

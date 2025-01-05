@@ -36,7 +36,7 @@ function finalizarCompra(evento) {
   apagarDoLocalStorage("carrinho");
 
   window.location.href =
-    window.location.origin + "/e-commerce-zara/pedidos.html";
+    window.location.origin + "/e-commerce_zara/pedidos.html";
 }
 
 desenharProdutosCheckout();

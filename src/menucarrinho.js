@@ -17,7 +17,7 @@ function irParaCheckout() {
     return;
   }
   window.location.href =
-    window.location.origin + "/e-commerce-zara/checkout.html";
+    window.location.origin + "/e-commerce_zara/checkout.html";
 }
 
 export function inicializarCarrinho() {
