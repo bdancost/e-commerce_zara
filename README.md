@@ -22,7 +22,7 @@ Este projeto simula um sistema de e-commerce, com foco na experiência do usuár
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/usuario/e-commerce-zara.git
+git clone https://github.com/bdancost/e-commerce_zara.git
 ```
 
 ### 2. Acessar o Diretório do Projeto
