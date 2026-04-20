@@ -17,23 +17,6 @@ Este projeto simula um sistema de e-commerce, com foco na experiência do usuár
 - **Checkout** (`checkout.html`): Finaliza a compra e salva o pedido no histórico.
 - **Histórico de Pedidos** (`pedidos.html`): Exibe os pedidos anteriores realizados, com detalhes dos produtos comprados.
 
-## 🚀 Como Rodar o Projeto
-
-### 1. Clonar o Repositório
-
-```bash
-git clone https://github.com/bdancost/e-commerce_zara.git
-```
-
-### 2. Acessar o Diretório do Projeto
-
-```bash
-cd e-commerce-zara
-```
-
-### 3. Abrir o Arquivo `index.html`
-
-Você pode abrir o arquivo `index.html` em seu navegador para ver o funcionamento da loja.
 
 ## 📂 Estrutura de Pastas
 
